@@ -4,10 +4,9 @@
   <summary>View Sample Screenshots</summary>
 
   ### Sample Screenshots
-
   Here are two screenshots showcasing the portfolio webpage:
-  ![Screenshot 1]([path/to/screenshot1.png](https://github.com/user-attachments/assets/3882232e-46f3-490f-a913-0c2ea5d1439b))
-  ![Screenshot 2]([path/to/screenshot2.png](https://github.com/user-attachments/assets/8b39e931-cebc-4590-96de-f52bd0d2a1cc))
+  ![Screenshot 1](https://github.com/user-attachments/assets/3882232e-46f3-490f-a913-0c2ea5d1439b)
+  ![Screenshot 2](https://github.com/user-attachments/assets/8b39e931-cebc-4590-96de-f52bd0d2a1cc)
 
 </details>
 
