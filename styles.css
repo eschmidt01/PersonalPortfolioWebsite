@@ -1,0 +1,257 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7fa;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5em;
+    font-weight: 700;
+}
+
+a {
+    color: #1d72b8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px 0;
+    background: linear-gradient(135deg, #0077ff, #00c6ff);
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header h2 {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0077ff;
+    padding-bottom: 5px;
+}
+
+/* Overview Section */
+#overview p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Outcomes Section */
+#outcomes {
+    margin-bottom: 30px;
+}
+
+#outcomes ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#outcomes li {
+    font-size: 1.1em;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+#outcomes li:hover {
+    transform: translateY(-2px);
+}
+
+/* Color-coded Outcome Classes */
+.blue {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.green {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.orange {
+    background-color: #fd7e14;
+    color: #fff;
+}
+
+.purple {
+    background-color: #6f42c1;
+    color: #fff;
+}
+
+.red {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.yellow {
+    background-color: #ffc107;
+    color: #333;
+}
+
+/* Features Section */
+#features .feature {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: box-shadow 0.3s;
+}
+
+#features .feature:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#features h4 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#features p {
+    margin: 8px 0;
+    font-size: 1em;
+    color: #555;
+    line-height: 1.8;
+}
+
+#features ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
+#features ul li {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Color-coded Dots */
+.dot {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.dot.blue { background-color: #007bff; }
+.dot.green { background-color: #28a745; }
+.dot.orange { background-color: #fd7e14; }
+.dot.purple { background-color: #6f42c1; }
+.dot.red { background-color: #dc3545; }
+.dot.yellow { background-color: #ffc107; }
+
+/* Detailed Description Styling */
+.detailed-description {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 0.95em;
+    color: #444;
+    line-height: 1.6;
+    border-left: 4px solid #007bff;
+}
+
+.detailed-description strong {
+    color: #007bff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Appraisal Section */
+#appraisal {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #0077ff;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Interactive Effects */
+#features .feature h4 {
+    transition: color 0.3s;
+}
+
+#features .feature h4:hover {
+    color: #0077ff;
+}
+
+header h1, header h2 {
+    transition: color 0.3s ease;
+}
+
+header h1:hover, header h2:hover {
+    color: #f4f7fa;
+}
+
+/* Shadows and Borders */
+section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile Styling */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h2 {
+        font-size: 1em;
+    }
+
+    #features h4 {
+        font-size: 1.3em;
+    }
+
+    .detailed-description {
+        font-size: 0.9em;
+    }
+}

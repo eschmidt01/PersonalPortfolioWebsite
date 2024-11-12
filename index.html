@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Personal Portfolio Website</h1>
+        <h2>Eric Schmidt - Student #: 720309</h2>
+    </header>
+
+    <!-- Overview Section -->
+    <section id="overview">
+        <p>
+            This web app offers a professional and engaging showcase of skills, projects, and accomplishments, with interactive features like a project gallery, testimonials, a downloadable resume, and contact options for networking.
+        </p>
+    </section>
+
+    <!-- Desired Outcomes -->
+    <section id="outcomes">
+        <h3>Desired Outcomes</h3>
+        <ol>
+            <li class="blue">Professional Presentation</li>
+            <li class="green">Showcase of Skills and Projects</li>
+            <li class="orange">Engaging User Experience</li>
+            <li class="purple">Easy Access to Resume</li>
+            <li class="red">Accessible Design</li>
+            <li class="yellow">Personal Branding</li>
+        </ol>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h3>Features</h3>
+
+        <!-- Feature 1 -->
+        <div class="feature">
+            <h4>1. About Section</h4>
+            <p>
+                This section provides a brief introduction to the portfolio owner, highlighting key skills, experiences, and interests. It sets the tone for the rest of the website and establishes a personal connection.
+            </p>
+            <p>
+                Relevant Outcomes:
+                <span class="dot blue"></span> Professional Presentation,
+                <span class="dot yellow"></span> Personal Branding
+            </p>
+            <ul>
+                <li>Biography</li>
+                <li>Profile Image</li>
+                <li>Key Skills</li>
+                <li>Social Media Links</li>
+            </ul>
+            <p>
+                <strong>Example and Short Description:</strong><br>
+                GitHub Repository: <a href="#">Responsive Portfolio About Section</a><br>
+                Live Example: <a href="#">Brittany Chiang's About Page</a><br>
+                Documentation: <a href="#">Creating an About Section</a>
+            </p>
+            <p class="detailed-description">
+                <strong>Implementation in Flask:</strong> In Flask, this section can be rendered dynamically by pulling data from a profile database table and displaying it within a Jinja2 template, allowing for easy updates.
+            </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature">
+            <h4>2. Project Gallery</h4>
+            <p>
+                A visually appealing grid showcasing project thumbnails with modal popups or hover effects, allowing visitors to see key projects and related information in an engaging way.
+            </p>
+            <p>
+                Relevant Outcomes:
+                <span class="dot green"></span> Showcase of Skills and Projects,
+                <span class="dot orange"></span> Engaging User Experience
+            </p>
+            <ul>
+                <li>Thumbnail Grid</li>
+                <li>Hover Effect</li>
+                <li>Modal Popups</li>
+                <li>Project Tags</li>
+            </ul>
+            <p>
+                <strong>Example and Short Description:</strong><br>
+                GitHub Repository: <a href="#">VCard Personal Portfolio</a><br>
+                Live Example: <a href="#">Sean Halpin's Project Gallery</a><br>
+                Documentation: <a href="#">Masonry Layout</a>
+            </p>
+            <p class="detailed-description">
+                <strong>Implementation in Flask:</strong> Flask can serve project data from a database, rendering the gallery dynamically in a Jinja2 template. JavaScript can manage modal popups, enhancing the viewing experience.
+            </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature">
+            <h4>3. Skills Section</h4>
+            <p>
+                This section visually displays technical skills using icons, progress bars, or charts, helping visitors quickly gauge the portfolio owner’s expertise in various areas.
+            </p>
+            <p>
+                Relevant Outcomes:
+                <span class="dot green"></span> Showcase of Skills and Projects,
+                <span class="dot blue"></span> Professional Presentation
+            </p>
+            <ul>
+                <li>Icons</li>
+                <li>Proficiency Bars</li>
+                <li>Skill Categories</li>
+                <li>Tooltips</li>
+            </ul>
+            <p>
+                <strong>Example and Short Description:</strong><br>
+                GitHub Repository: <a href="#">Portfolio Skills Section</a><br>
+                Live Example: <a href="#">Jacek Jeznach’s Skills Display</a><br>
+                Documentation: <a href="#">Progress Bars in JS</a>
+            </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature">
+            <h4>4. Testimonials</h4>
+            <p>
+                A carousel or slider featuring testimonials from previous clients, employers, or collaborators, reinforcing credibility and showcasing the portfolio owner's impact.
+            </p>
+            <p>
+                Relevant Outcomes:
+                <span class="dot yellow"></span> Personal Branding,
+                <span class="dot blue"></span> Professional Presentation
+            </p>
+            <ul>
+                <li>Testimonial Quotes</li>
+                <li>User Photos</li>
+                <li>Carousel Slider</li>
+                <li>Role/Relationship Descriptions</li>
+            </ul>
+            <p>
+                <strong>Example and Short Description:</strong><br>
+                GitHub Repository: <a href="#">Responsive Portfolio with Testimonials</a><br>
+                Live Example: <a href="#">Yevgeniy Brikman's Testimonials</a><br>
+                Documentation: <a href="#">Carousel Slider Library</a>
+            </p>
+            <p class="detailed-description">
+                <strong>Implementation in Flask:</strong> Testimonials can be stored in a database, served to the front end by a Flask route. Jinja2 can render the content, while JavaScript handles the slider functionality.
+            </p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature">
+            <h4>5. Contact Form</h4>
+            <p>
+                A simple form allowing visitors to reach out directly, enabling potential employers, clients, or collaborators to initiate contact.
+            </p>
+            <p>
+                Relevant Outcomes:
+                <span class="dot red"></span> Accessible Design,
+                <span class="dot blue"></span> Professional Presentation
+            </p>
+            <ul>
+                <li>Form Fields</li>
+                <li>Input Validation</li>
+                <li>Submit Button</li>
+                <li>Confirmation Message</li>
+            </ul>
+            <p>
+                <strong>Example and Short Description:</strong><br>
+                GitHub Repository: <a href="#">Form Submission to Google Sheets</a><br>
+                Live Example: <a href="#">Matt Farley’s Contact Form</a><br>
+                Documentation: <a href="#">Custom Form Styling</a>
+            </p>
+            <p class="detailed-description">
+                <strong>Implementation in Flask:</strong> A Flask route can capture form data via POST, validate inputs, and optionally send the data to an email or database, ensuring reliable communication.
+            </p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature">
+            <h4>6. Download Resume</h4>
+            <p>
+                Provides a downloadable link to the portfolio owner’s resume in PDF format, enabling easy access for potential employers or collaborators.
+            </p>
+            <p>
+                Relevant Outcomes:
+                <span class="dot purple"></span> Easy Access to Resume,
+                <span class="dot blue"></span> Professional Presentation
+            </p>
+            <ul>
+                <li>Download Button</li>
+                <li>PDF Format</li>
+                <li>Tooltip</li>
+                <li>File Hosting</li>
+            </ul>
+            <p>
+                <strong>Example and Short Description:</strong><br>
+                GitHub Repository: <a href="#">Portfolio with Resume Download</a><br>
+                Live Example: <a href="#">Dejan’s Resume Download</a><br>
+                Documentation: <a href="#">HTML Download Attribute</a>
+            </p>
+            <p class="detailed-description">
+                <strong>Implementation in Flask:</strong> Flask can serve the resume file as a static resource, linked from a button on the front end, with the download attribute enabling PDF file download on click.
+            </p>
+        </div>
+
+        <!-- Feature 7 -->
+        <div class="feature">
+            <h4>7. Video Introduction</h4>
+            <p>
+                An embedded video introducing the portfolio owner or showcasing a project, adding a personal touch and offering a more dynamic presentation.
+            </p>
+            <p>
+                Relevant Outcomes:
+                <span class="dot yellow"></span> Personal Branding,
+                <span class="dot orange"></span> Engaging User Experience
+            </p>
+            <ul>
+                <li>Video Player</li>
+                <li>Play Button</li>
+                <li>Transcript</li>
+                <li>Captioning</li>
+            </ul>
+            <p>
+                <strong>Example and Short Description:</strong><br>
+                GitHub Repository: <a href="#">Portfolio with Video Section</a><br>
+                Live Example: <a href="#">Gary Vaynerchuk’s Video Introduction</a><br>
+                Documentation: <a href="#">YouTube Player Parameters</a>
+            </p>
+            <p class="detailed-description">
+                <strong>Implementation in Flask:</strong> Flask can embed a video link (YouTube or self-hosted) within a template, allowing easy inclusion of captions or transcripts for accessibility.
+            </p>
+        </div>
+
+        <!-- Feature 8 -->
+        <div class="feature">
+            <h4>8. Case Study Pages</h4>
+            <p>
+                These dedicated pages provide in-depth information about each project, including objectives, challenges, approaches, and outcomes. They allow visitors to understand the portfolio owner’s problem-solving skills and work process.
+            </p>
+            <p>
+                Relevant Outcomes:
+                <span class="dot green"></span> Showcase of Skills and Projects,
+                <span class="dot blue"></span> Professional Presentation
+            </p>
+            <ul>
+                <li>Project Overview</li>
+                <li>Challenges</li>
+                <li>Solutions</li>
+                <li>Results</li>
+            </ul>
+            <p>
+                <strong>Example and Short Description:</strong><br>
+                GitHub Repository: <a href="#">DevPortfolio with Case Study Layouts</a><br>
+                Live Example: <a href="#">Van Schneider’s Case Studies</a><br>
+                Documentation: <a href="#">Creating UX Case Studies</a>
+            </p>
+            <p class="detailed-description">
+                <strong>Implementation in Flask:</strong> In Flask, each project can have a unique route pulling data from a projects database table. A Jinja2 template can display each project’s details, creating a custom page for each case study.
+            </p>
+        </div>
+
+        <!-- Feature 9 -->
+        <div class="feature">
+            <h4>9. Interactive Timeline</h4>
+            <p>
+                A timeline showcasing career milestones or project developments in chronological order. This visual feature helps visitors see the portfolio owner’s growth over time.
+            </p>
+            <p>
+                Relevant Outcomes:
+                <span class="dot green"></span> Showcase of Skills and Projects,
+                <span class="dot orange"></span> Engaging User Experience
+            </p>
+            <ul>
+                <li>Timeline Events</li>
+                <li>Chronological Order</li>
+                <li>Popups</li>
+                <li>Links to Case Studies</li>
+            </ul>
+            <p>
+                <strong>Example and Short Description:</strong><br>
+                GitHub Repository: <a href="#">Timeline with Interactive Elements</a><br>
+                Live Example: <a href="#">Adham Dannaway’s Timeline</a><br>
+                Documentation: <a href="#">CSS Timeline Tutorial</a>
+            </p>
+            <p class="detailed-description">
+                <strong>Implementation in Flask:</strong> Flask can serve a JSON file with milestone data, which JavaScript can dynamically load to build the timeline. Each event can link to relevant case studies or additional details.
+            </p>
+        </div>
+
+        <!-- Feature 10 -->
+        <div class="feature">
+            <h4>10. Skills Filter</h4>
+            <p>
+                A filtering system that lets visitors filter projects based on specific skills or technologies, allowing them to find projects that align with certain expertise areas.
+            </p>
+            <p>
+                Relevant Outcomes:
+                <span class="dot green"></span> Showcase of Skills and Projects,
+                <span class="dot red"></span> Accessible Design
+            </p>
+            <ul>
+                <li>Filter Buttons</li>
+                <li>Active State</li>
+                <li>Tagging System</li>
+                <li>JavaScript Filtering</li>
+            </ul>
+            <p>
+                <strong>Example and Short Description:</strong><br>
+                GitHub Repository: <a href="#">Portfolio with Skills Filter</a><br>
+                Live Example: <a href="#">Caferati’s Project Portfolio</a><br>
+                Documentation: <a href="#">Isotope Filtering</a>
+            </p>
+            <p class="detailed-description">
+                <strong>Implementation in Flask:</strong> The backend can store each project with associated skill tags in a database. Flask renders the project data, and JavaScript filters the displayed projects based on selected skills.
+            </p>
+        </div>
+
+        <!-- Feature 11 -->
+        <div class="feature">
+            <h4>11. Social Media Links</h4>
+            <p>
+                Links to the portfolio owner’s social media profiles, encouraging visitors to connect on professional and personal platforms.
+            </p>
+            <p>
+                Relevant Outcomes:
+                <span class="dot yellow"></span> Personal Branding,
+                <span class="dot red"></span> Accessible Design
+            </p>
+            <ul>
+                <li>Icon Links</li>
+                <li>Hover Effects</li>
+                <li>Footer Integration</li>
+                <li>External Links</li>
+            </ul>
+            <p>
+                <strong>Example and Short Description:</strong><br>
+                GitHub Repository: <a href="#">Social Share URLs</a><br>
+                Live Example: <a href="#">Tania Rascia’s Social Links</a><br>
+                Documentation: <a href="#">FontAwesome Social Icons</a>
+            </p>
+            <p class="detailed-description">
+                <strong>Overview:</strong> An interactive resume viewer offers visitors a quick way to browse through the resume, providing access without leaving the site or requiring a separate download.
+            </p>
+            <p class="detailed-description">
+                <strong>Implementation in Flask:</strong> Social media links help bridge connections with visitors, allowing them to follow, contact, and network with the portfolio owner beyond the website.
+            </p>
+        </div>
+
+        <!-- Feature 12 -->
+        <div class="feature">
+            <h4>12. Blog Section</h4>
+            <p>
+                A dedicated area for short articles or updates related to the field, allowing the portfolio owner to share insights, industry trends, or personal projects.
+            </p>
+            <p>
+                Relevant Outcomes:
+                <span class="dot yellow"></span> Personal Branding,
+                <span class="dot blue"></span> Professional Presentation
+            </p>
+            <ul>
+                <li>Post Excerpts</li>
+                <li>Categories</li>
+                <li>Read More Links</li>
+                <li>Article Date</li>
+            </ul>
+            <p>
+                <strong>Example and Short Description:</strong><br>
+                GitHub Repository: <a href="#">Gatsby Blog Starter</a><br>
+                Live Example: <a href="#">Josh Comeau’s Blog</a><br>
+                Documentation: <a href="#">Adding Markdown Pages in Gatsby</a>
+            </p>
+            <p class="detailed-description">
+                <strong>Implementation in Flask:</strong> Flask can manage blog posts in a database, with individual routes for each article. Markdown files or rich text can be parsed into HTML for display.
+            </p>
+        </div>
+
+        <!-- Feature 13 -->
+        <div class="feature">
+            <h4>13. Testimonial Submission</h4>
+            <p>
+                A form allowing collaborators, clients, or colleagues to submit endorsements, which can later be displayed in the testimonial section.
+            </p>
+            <p>
+                Relevant Outcomes:
+                <span class="dot orange"></span> Engaging User Experience,
+                <span class="dot blue"></span> Professional Presentation
+            </p>
+            <ul>
+                <li>Form Fields</li>
+                <li>Submit Button</li>
+                <li>Validation</li>
+                <li>Confirmation Message</li>
+            </ul>
+            <p>
+                <strong>Example and Short Description:</strong><br>
+                GitHub Repository: <a href="#">Learn to Send Email with Google Script</a><br>
+                Live Example: <a href="#">Eric Murphy’s Testimonial Submission</a><br>
+                Documentation: <a href="#">Google Forms API</a>
+            </p>
+            <p class="detailed-description">
+                <strong>Implementation in Flask:</strong> A Flask route can accept the form data via POST, storing it in a database for later approval and display. Validation ensures that all input fields are correctly filled out.
+            </p>
+        </div>
+
+        <!-- Feature 14 -->
+        <div class="feature">
+            <h4>14. Achievement Badges</h4>
+            <p>
+                Icons or badges representing certifications, awards, or notable achievements, which visually highlight key accomplishments.
+            </p>
+            <p>
+                Relevant Outcomes:
+                <span class="dot yellow"></span> Personal Branding,
+                <span class="dot green"></span> Showcase of Skills and Projects
+            </p>
+            <ul>
+                <li>Badge Icons</li>
+                <li>Tooltip Descriptions</li>
+                <li>Hover Effects</li>
+                <li>Color Coding</li>
+            </ul>
+            <p>
+                <strong>Example and Short Description:</strong><br>
+                GitHub Repository: <a href="#">Shields for Achievement Badges</a><br>
+                Live Example: <a href="#">Robin Wieruch’s Achievement Badges</a><br>
+                Documentation: <a href="#">Shields.io Badges</a>
+            </p>
+            <p class="detailed-description">
+                <strong>Implementation in Flask:</strong> In a Flask application, badges can be dynamically rendered from a database storing achievement data. Jinja2 can display each badge with an icon, and JavaScript tooltips can provide extra details on hover.
+            </p>
+        </div>
+
+        <!-- Feature 15 -->
+        <div class="feature">
+            <h4>15. Interactive Resume Viewer</h4>
+            <p>
+                A section where the resume is displayed interactively, allowing users to scroll through or view it in a PDF format within the page.
+            </p>
+            <p>
+                Relevant Outcomes:
+                <span class="dot purple"></span> Easy Access to Resume,
+                <span class="dot blue"></span> Professional Presentation
+            </p>
+            <ul>
+                <li>Embedded PDF</li>
+                <li>Scrollable Sections</li>
+                <li>Highlighted Key Points</li>
+                <li>Download Button</li>
+            </ul>
+            <p>
+                <strong>Example and Short Description:</strong><br>
+                GitHub Repository: <a href="#">Mozilla PDF.js</a><br>
+                Live Example: <a href="#">Visual CV Resume Viewer</a><br>
+                Documentation: <a href="#">PDF.js Viewer by Mozilla</a>
+            </p>
+            <p class="detailed-description">
+                <strong>Overview:</strong> An interactive resume viewer offers visitors a quick way to browse through the resume, providing access without leaving the site or requiring a separate download.
+            </p>
+            <p class="detailed-description">
+                <strong>Implementation in Flask:</strong> Flask can serve the resume PDF as a static file, and using the PDF.js library, the resume can be embedded directly in the web page, allowing for smooth scrolling and interactive viewing.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Appraisal Section -->
+    <section id="appraisal">
+        <p>
+            The implemented features provide a comprehensive showcase of skills and projects, enhancing professional presentation and user engagement. A potential enhancement could be the integration of a dark mode for improved accessibility. Improvements could also be made in optimizing load times by implementing lazy loading for images. Under circumstances where user analytics are crucial, integrating tracking tools would ensure those changes meet user interaction insights.
+        </p>
+    </section>
+
+</body>
+</html>
