@@ -1,5 +1,16 @@
 # Personal Portfolio Website
 
+<details>
+  <summary>View Sample Screenshots</summary>
+
+  ### Sample Screenshots
+
+  Here are two screenshots showcasing the portfolio webpage:
+  ![Screenshot 1]([path/to/screenshot1.png](https://github.com/user-attachments/assets/3882232e-46f3-490f-a913-0c2ea5d1439b))
+  ![Screenshot 2]([path/to/screenshot2.png](https://github.com/user-attachments/assets/8b39e931-cebc-4590-96de-f52bd0d2a1cc))
+
+</details>
+
 ## Overview
 
 This mock web application is a personal portfolio designed to showcase skills, projects, and accomplishments. It features interactive elements like a project gallery, testimonials, a downloadable resume, and contact options for networking.
